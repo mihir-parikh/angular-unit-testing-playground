@@ -20,6 +20,11 @@ export class UserComponent implements OnInit {
 
   ngOnInit() {
     this.user = this.userService.user;
+    /**
+     * Once the promise is resolved, whatever data is received, assign it to this.data
+     * The data that will be received will be of type string
+     */
+    this.dataService.getDetails().then((data: string) => this.data = data);
   }
 
 }

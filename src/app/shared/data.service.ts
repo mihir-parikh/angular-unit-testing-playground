@@ -9,7 +9,8 @@ export class DataService {
 
   getDetails() {
     // Promise constructor accepts a callback function with two arguments
-    const resultPromise = new Promise((resolve, reject) => {
+    // It is a Promis of type string
+    const resultPromise = new Promise<string>((resolve, reject) => {
       setTimeout(() => {
         resolve('Data');
       }, 1500);
