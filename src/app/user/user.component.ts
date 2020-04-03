@@ -12,7 +12,7 @@ export class UserComponent implements OnInit {
   user: {
     name: string;
   }
-  isLoggedIn: false;
+  isLoggedIn = false;
 
   constructor(private userService: UserService) { }
 
